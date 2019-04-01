@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Hexo
+      img标签之间有上下和左右空隙 | Hexo
     
   </title>
   <meta name="author" content="John Doe">
@@ -115,7 +115,7 @@
 				<!-- Page title -->
 				<p>
 					
-						当前文章&nbsp;:&nbsp;《Hello World》
+						当前文章&nbsp;:&nbsp;《img标签之间有上下和左右空隙》
 					
 				</p>
 				<!-- Progress bar -->
@@ -278,8 +278,8 @@
 	
 	<div class="article-title">
 		
-	<a href="/2019/03/29/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/03/29/css-img标签之间有上下和左右空隙/" itemprop="url">
+		img标签之间有上下和左右空隙
 	</a>
 
 	</div>
@@ -288,17 +288,17 @@
 		<span>
 			
 	发布于
-	<a href="/2019/03/29/hello-world/" itemprop="url">
-		<time datetime="2019-03-29T04:08:35.788Z" itemprop="datePublished">
+	<a href="/2019/03/29/css-img标签之间有上下和左右空隙/" itemprop="url">
+		<time datetime="2019-03-29T06:54:18.000Z" itemprop="datePublished">
 	  		2019-03-29
 	  </time>
 	</a> 
 
 	/
 	更新于
-	<a href="/2019/03/29/hello-world/" itemprop="url">
-		<time datetime="2019-03-29T04:08:35.788Z" itemprop="dateUpdated">
-	  		2019-03-29
+	<a href="/2019/03/29/css-img标签之间有上下和左右空隙/" itemprop="url">
+		<time datetime="2019-03-29T06:54:18.000Z" itemprop="dateUpdated">
+	  		2019-04-01
 	  </time>
 	</a> 	
 
@@ -306,12 +306,18 @@
 		/
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/css/" class=" ">
+			css
+		</a>
+	
+		
 		</span>
 		/
 		
 
-    <span class="leancloud_visitors" id="/2019/03/29/hello-world/_visitors" data-url="/2019/03/29/hello-world/" data-title="Hello World">
+    <span class="leancloud_visitors" id="/2019/03/29/css-img标签之间有上下和左右空隙/_visitors" data-url="/2019/03/29/css-img标签之间有上下和左右空隙/" data-title="img标签之间有上下和左右空隙">
         热度
         <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
     </span>
@@ -320,7 +326,7 @@
 
 
 
-    <span class="leancloud_likes" id="/2019/03/29/hello-world/_likes" data-url="/2019/03/29/hello-world/" data-title="Hello World" rel="unlike">
+    <span class="leancloud_likes" id="/2019/03/29/css-img标签之间有上下和左右空隙/_likes" data-url="/2019/03/29/css-img标签之间有上下和左右空隙/" data-title="img标签之间有上下和左右空隙" rel="unlike">
         喜欢
         <i class="fa fa-heart"></i>
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -329,19 +335,33 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+		<p>几个img标签放在一起，如果不添加任何样式，会天然的存在上下左右之间的空隙。<br><img src="https://img-blog.csdnimg.cn/20190401113807917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MzU3NjI4,size_16,color_FFFFFF,t_70#pic_center" alt="没有加样式的img排列"><br>图片上加了边距，可以看出图片上下左右都有边距。</p>
+<h1 id="如何消除边距呢？"><a href="#如何消除边距呢？" class="headerlink" title="如何消除边距呢？"></a>如何消除边距呢？</h1><p>1.多个标签写在一行</p>
+<pre><code class="javascript">    &lt;img src=&quot;test.jpg&quot;&gt;&lt;img src=&quot;test.jpg&quot;&gt;
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+<p><img src="https://img-blog.csdnimg.cn/20190401115109688.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MzU3NjI4,size_16,color_FFFFFF,t_70" alt="多个标签写在一行"><br>2.将要闭合标签的地方与开始标签的地方重合</p>
+<pre><code class="javascript">    &lt;img src=&quot;test.jpg&quot;
+    &gt;&lt;img src=&quot;test.jpg&quot;&gt;
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+<p>3.使用注释头尾相连</p>
+<pre><code class="javascript">    &lt;img src=&quot;test.jpg&quot;&gt;&lt;!--
+    --&gt;&lt;img src=&quot;test.jpg&quot;&gt;
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+<p>4.在img标签的父级上写：font-size:0;</p>
+<pre><code class="javascript">&lt;div style=&quot;font-size:0&quot;&gt;
+    &lt;img src=&quot;test.jpg&quot;&gt;
+    &lt;img src=&quot;test.jpg&quot;&gt;
+&lt;/div&gt;
 </code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>5.使用letter-spacing属性</p>
+<pre><code class="javascript">&lt;div style=&quot;letter-spacing:-10px&quot;&gt;
+    &lt;img src=&quot;test.jpg&quot;&gt;
+    &lt;img src=&quot;test.jpg&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<p>如果数值设置的过小，会出现横向滚动条。<br>6.img{vertical-align:top;}（消除上下间隙）<br>7.img{float: left;}（消除上下左右间隙）<br><a href="https://www.cnblogs.com/zqzjs/p/4868325.html" target="_blank" rel="noopener">参考解决方案博客链接-多个img空隙</a></p>
+<h1 id="两张img之间为什么会有空隙？"><a href="#两张img之间为什么会有空隙？" class="headerlink" title="两张img之间为什么会有空隙？"></a>两张img之间为什么会有空隙？</h1><p>img标签本身是个行内元素，所以当多个img排在一起时，它们之间如果有回车换行或者空格就会形成空隙。（行内元素默认都会有左右间距）</p>
+<p>其实如图片文字等内联元素，它默认对齐方式都是和它的父级的 baseline 去进行对齐的，但是你对齐的是 baseline，撑开高度的却是元素整体的高度（bottom line），这样肯定就会造成一定的间隙。</p>
 	
 	</div>
 	
@@ -359,10 +379,10 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/03/29/css-img标签之间有上下和左右空隙/" title="img标签之间有上下和左右空隙" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/2019/03/29/hello-world/" title="Hello World" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
       		
@@ -378,18 +398,16 @@
 		
 				<li>
 					<div>
-						<a href="/2019/03/29/css-img标签之间有上下和左右空隙/" title="img标签之间有上下和左右空隙">
-							img标签之间有上下和左右空隙
+						<a href="/2019/03/29/hello-world/" title="Hello World">
+							Hello World
 						</a>
 						<p>
-							几个img标签放在一起，如果不添加任何样式，会天然的存在上下左右之间的空隙。图片上加了边距，可以看出图片上下左右都有边距。
-如何消除边距呢？1.多个标签写在一行
-    &lt;img src=&quot;test.jpg&quot;...
+							Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
 						</p>
 					</div>
 
-					<a href="/2019/03/29/css-img标签之间有上下和左右空隙/" title="img标签之间有上下和左右空隙">				
-						<img src="/img/cart_cover.jpg" class="relateImg" alt="img标签之间有上下和左右空隙">
+					<a href="/2019/03/29/hello-world/" title="Hello World">				
+						<img src="/img/cart_cover.jpg" class="relateImg" alt="Hello World">
 					</a>
 				</li>											
 		
